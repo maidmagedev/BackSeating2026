@@ -1302,6 +1302,8 @@ GameObject:
   - component: {fileID: 791796078}
   - component: {fileID: 791796077}
   - component: {fileID: 791796079}
+  - component: {fileID: 791796081}
+  - component: {fileID: 791796080}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1349,6 +1351,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GreenHeatTest
   greenHeatEventManager: {fileID: 0}
+--- !u!114 &791796080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791796076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e975d00958436b46a716b21a4dca13e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TwitchChatHandler
+--- !u!114 &791796081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791796076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b273dcbdb39fcc4ab442b61d920b4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: lexonegit.unity-twitch-chat::Lexone.UnityTwitchChat.IRC
+  address: irc.chat.twitch.tv
+  port: 6667
+  useAnonymousLogin: 1
+  oauth: 
+  username: 
+  channel: maidmagedev
+  connectIRCOnStart: 1
+  joinChannelOnStart: 1
+  dontDestroyOnLoad: 1
+  showIRCDebug: 1
+  showThreadDebug: 1
+  useRandomColorForUndefined: 0
+  readInterval: 50
+  readBufferSize: 256
+  writeInterval: 50
 --- !u!1 &804493999
 GameObject:
   m_ObjectHideFlags: 0
